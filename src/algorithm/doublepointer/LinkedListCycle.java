@@ -51,6 +51,15 @@ import java.util.List;
  */
 public class LinkedListCycle {
 
+    /**
+     *
+     * 使用 hashSet 存储中间结果
+     *
+     * Time：O(n), Space: O(n)
+     *
+     * @param head
+     * @return
+     */
     public boolean hasCycleUsingHashSet(ListNode head) {
         if (head == null) {
             return false;
@@ -81,13 +90,13 @@ public class LinkedListCycle {
         if (head == null) {
             return false;
         }
-        ListNode p1 = head, p2 = head.next;
-        while (p1 != null && p2 != null && p2.next != null) {
-            if (p1 == p2) {
+        ListNode slow = head, fast = head.next;
+        while (slow != null && fast != null && fast.next != null) {
+            if (slow == fast) {
                 return true;
             }
-            p1 = p1.next;
-            p2 = p2.next.next;
+            slow = slow.next;
+            fast = fast.next.next;
         }
         return false;
     }
