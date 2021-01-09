@@ -7,3 +7,4 @@
 - [680.验证回文字符串 Ⅱ](https://leetcode-cn.com/problems/valid-palindrome-ii/description/)
 - [88.合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array/description/)
 - [141.环形链表](https://leetcode-cn.com/problems/linked-list-cycle/)
+- [524.通过删除字母匹配到字典里最长单词](https://leetcode-cn.com/problems/longest-word-in-dictionary-through-deleting/)

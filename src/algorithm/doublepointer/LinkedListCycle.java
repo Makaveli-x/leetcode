@@ -1,7 +1,6 @@
 package algorithm.doublepointer;
 
 import java.util.HashSet;
-import java.util.List;
 
 /**
  *
